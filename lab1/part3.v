@@ -13,7 +13,7 @@ module part3(SW, LEDR, LEDG);
 	assign X = SW[5:3];	
 	assign Y = SW[2:0];
 	assign LEDR = SW;
-	assign LEDG = M;
+	assign LEDG = M;    
 	
 	assign M00 = (~S[0] & U[0] | S[0] & V[0]);
 	assign M01 = (~S[0] & W[0] | S[0] & X[0]);
