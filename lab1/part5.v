@@ -33,7 +33,7 @@ module mux_3bit_5to1(s, u ,v, w, x, y, M);
 	input [2:0] s, u, v, w, x, y;
 	output [2:0]M;
 	
-	wire m00, m01m, m02, m10, m11, m12, m20, m21, m22;
+	wire m00, m01, m02, m10, m11, m12, m20, m21, m22;
 	
 	assign m00 = (~s[0] & u[0] | s[0] & v[0]);
 	assign m01 = (~s[0] & w[0] | s[0] & x[0]);
